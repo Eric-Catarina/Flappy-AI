@@ -6,7 +6,7 @@ public class FlappyMovement : MonoBehaviour
 {
     // Start is called before the first frame update
     private Rigidbody rb;
-    [SerializeField] private float forcaDoSoco = 10f;
+    [SerializeField] private float forcaDoSoco = 7f;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
