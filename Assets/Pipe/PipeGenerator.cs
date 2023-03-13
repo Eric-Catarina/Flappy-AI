@@ -32,7 +32,7 @@ public class PipeGenerator : MonoBehaviour
         float pipeRotation = Random.Range(0, 180f);
         
         float pipesYPosition = Random.Range(minYPosition, maxYPosition);
-        Vector3 pipesPosition = new Vector3(10, pipesYPosition, 60.6f);
+        Vector3 pipesPosition = new Vector3(gameObject.transform.position.x, pipesYPosition, gameObject.transform.position.z);
         GameObject currentPipes = Instantiate(pipes, pipesPosition, Quaternion.identity);
         currentPipes.transform.GetChild(0).transform.Rotate(0,0,pipeRotation);
         currentPipes.transform.GetChild(1).transform.Rotate(0,0,pipeRotation);
