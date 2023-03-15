@@ -18,6 +18,8 @@ public class FlappyCollision : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
+        Debug.Log(collider.tag);
+
         if (collider.tag != "flappy" && collider.tag != "pipe_goal")
         {
             Destroy(gameObject);
@@ -25,6 +27,7 @@ public class FlappyCollision : MonoBehaviour
         }
         if(collider.tag == "pipe_goal")
         {
+            
             Debug.Log("Pontos ++");
         }
     }

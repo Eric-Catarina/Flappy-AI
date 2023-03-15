@@ -13,7 +13,7 @@ public class PipeGenerator : MonoBehaviour
     private float currentTime = 0;
     void Start()
     {
-        
+        spawnPipe();
     }
 
     // Update is called once per frame
